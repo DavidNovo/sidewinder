@@ -10,7 +10,11 @@ Sidewinder.Preload.prototype = {
       this.game.world.centerY, 'logo');
     this.splash.anchor.setTo(0.5);
 
-    this.load.setPreloadSprite(this.preloadbar);
+    this.preloadBar = this.add.sprite(this.game.world.centerX,
+      this.game.world.centerY + 128, 'preloadbar');
+    this.preloadBar.anchor.setTo(0.5);
+
+    //this.load.setPreloadSprite(this.preloadbar);
 
     // load game assets
     this.load.image('space', 'assets/images/space.png');
