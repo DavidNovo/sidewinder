@@ -11,7 +11,7 @@ Sidewinder.Game = function() {};
 Sidewinder.Game.prototype = {
   create: function() {
     // set the game world dimensions
-    this.game.world.setBounds(0, 0, 1920, 1920);
+    this.game.world.setBounds(0, 0, 3564, 2005);
 
     // make the star field
     this.background = this.game.add.tileSprite(0, 0,
