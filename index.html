@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="utf-8" />
+<head>
+    <meta charset="utf-8" />
 
-		<script type="text/javascript" src="js/phaser.js"></script>
-		<script type="text/javascript" src="js/Boot.js"></script>
-		<script type="text/javascript" src="js/Preload.js"></script>
-		<script type="text/javascript" src="js/MainMenu.js"></script>
-		<script type="text/javascript" src="js/Game.js"></script>
+    <script type="text/javascript" src="js/phaser.js"></script>
+    <!-- general game settings are defined in the next state -->
+    <script type="text/javascript" src="js/Boot.js"></script>
+    <!-- next the game assets are loaded into memory -->
+    <script type="text/javascript" src="js/Preload.js"></script>
+    <!-- then, the game's welcome screen is loaded-->
+    <script type="text/javascript" src="js/MainMenu.js"></script>
+    <!-- finallyy this is the where the game is -->
+    <script type="text/javascript" src="js/Game.js"></script>
 
-		<style>
-		  body {
-		    padding: 0px;
-		    margin: 0px;
-		  }
-		  </style>
-	</head>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
+</head>
 
-	<body>
-		<!-- include the main game file -->
-		<script src="js/main.js"></script>
-	</body>
+<body>
+    <!-- include the main game file -->
+    <!-- also defining the namespace for this game-->
+    <script src="js/main.js"></script>
+</body>
+
 </html>

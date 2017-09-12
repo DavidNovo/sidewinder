@@ -9,29 +9,30 @@ Sidewinder.Boot = function() {};
 // setting game configuration and loading the asets
 // for the loading screen
 Sidewinder.Boot.prototype = {
-  preload: function() {
-    // pre load assets, think loading screen
-    this.load.image('logo', 'assets/images/logo.png');
-    this.load.image('preloadbar', 'assets/images/preloader-bar.png');
-  },
-  // create assets
-  create: function() {
-    // loading screen will have a white background
-    this.game.stage.backgroundColor = '#fff';
+    preload: function() {
+        // pre load assets, think loading screen
+        this.load.image('logo', 'assets/images/logo.png');
+        this.load.image('preloadbar', 'assets/images/preloader-bar.png');
+    },
+    // create assets
+    create: function() {
+        // loading screen will have a white background
+        this.game.stage.backgroundColor = '#fff';
 
-    // scaling options
-    this.scale.scaleMode = Phaser.ScaleManager.RESIZE;
-    this.scale.minWidth = 240;
-    this.scale.minHeigth = 170;
-    this.scale.maxWidth = 2880;
-    this.scale.maxHeight = 1920;
+        // scaling options
+        this.scale.scaleMode = Phaser.ScaleManager.RESIZE;
+        this.scale.minWidth = 240;
+        this.scale.minHeigth = 170;
+        this.scale.maxWidth = 2880;
+        this.scale.maxHeight = 1920;
 
-    // have the game centered horizontally
-    this.scale.pageAlignHorizontally = true;
+        // have the game centered horizontally
+        this.scale.pageAlignHorizontally = true;
 
-    // physics system for movement
-    this.game.physics.startSystem(Phaser.Physics.ARCADE);
+        // physics system for movement
+        this.game.physics.startSystem(Phaser.Physics.ARCADE);
 
-    this.state.start('Preload');
-  }
+        // the next Phaser state is loaded  
+        this.state.start('Preload');
+    }
 };
