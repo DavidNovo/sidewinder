@@ -77,7 +77,7 @@ Sidewinder.Game.prototype = {
             asteriod.body.velocity.y = this.game.rnd.integerInRange(-20, 20);
             asteriod.body.immovable = true;
             asteriod.body.collideWorldBounds = true;
-            // thisx is so the asteroids bounce off the edge of the world
+            // this is so the asteroids bounce off the edge of the world
             asteriod.body.bounce.set(1);
         }
     },
